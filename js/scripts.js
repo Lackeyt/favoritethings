@@ -6,8 +6,13 @@ $(document).ready(function(){
     const fav3 = $("input#fav3").val();
 
     let favoriteThingsArray = [fav1, fav2, fav3];
-
-    alert(favoriteThingsArray);
     
-  })
+    const ftArrayNew = [];
+    ftArrayNew.push(favoriteThingsArray[1], favoriteThingsArray[0], favoriteThingsArray[2]);
+
+    $("li.thing1").text(favoriteThingsArray[1]);
+    $("li.thing2").text(favoriteThingsArray[0]);
+    $("li.thing3").text(favoriteThingsArray[2]);
+    $("#output").show()
+  });
 });
